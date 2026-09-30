@@ -1,0 +1,185 @@
+{
+  "checkpoint": "paper_results/mi_correlation/perslot_g0/model_seed_42.pt",
+  "n_emissions": 70424,
+  "n_q_slots": 4,
+  "n_candidates": 10,
+  "max_entropy_bits": 3.321928094887362,
+  "slots": [
+    {
+      "slot": 0,
+      "descriptors": {
+        "neigh_pattern": {
+          "I_bits": 0.11972487984514402,
+          "H_m_given_s_bits": 1.6438958851803185,
+          "I_shuffled_bits": 0.0013075452820112687,
+          "n_classes": 16,
+          "I_given_sender_bits": 0.34166155512985696,
+          "I_given_sender_shuffled_bits": 0.0031775764274011298
+        },
+        "n_dead_neigh": {
+          "I_bits": 0.04881364057990223,
+          "H_m_given_s_bits": 1.7148071244455603,
+          "I_shuffled_bits": 0.0003386538473526546,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.211105489306884,
+          "I_given_sender_shuffled_bits": 0.0013789305337499336
+        },
+        "n_dead_global": {
+          "I_bits": 0.051315907423431506,
+          "H_m_given_s_bits": 1.712304857602031,
+          "I_shuffled_bits": 0.00042133057061155554,
+          "n_classes": 7,
+          "I_given_sender_bits": 0.12902185664919918,
+          "I_given_sender_shuffled_bits": 0.0032314317119712666
+        },
+        "belief_bin": {
+          "I_bits": 0.11245923824987014,
+          "H_m_given_s_bits": 1.6511615267755924,
+          "I_shuffled_bits": 0.00045648518627272594,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.2418066797661631,
+          "I_given_sender_shuffled_bits": 0.0024851714794302815
+        },
+        "sender_id": {
+          "I_bits": 0.7008509677108519,
+          "H_m_given_s_bits": 1.0627697973146106,
+          "I_shuffled_bits": 0.0007583010500005205,
+          "n_classes": 9
+        }
+      },
+      "H_m_bits": 1.7636207650254625
+    },
+    {
+      "slot": 1,
+      "descriptors": {
+        "neigh_pattern": {
+          "I_bits": 0.1406030610714737,
+          "H_m_given_s_bits": 1.4371308001784155,
+          "I_shuffled_bits": 0.00110136158254881,
+          "n_classes": 16,
+          "I_given_sender_bits": 0.3456537421663196,
+          "I_given_sender_shuffled_bits": 0.002854533554812466
+        },
+        "n_dead_neigh": {
+          "I_bits": 0.04852683502328459,
+          "H_m_given_s_bits": 1.5292070262266046,
+          "I_shuffled_bits": 0.0003761073256516312,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.19987873247645216,
+          "I_given_sender_shuffled_bits": 0.001555457554722528
+        },
+        "n_dead_global": {
+          "I_bits": 0.05015973180043565,
+          "H_m_given_s_bits": 1.5275741294494536,
+          "I_shuffled_bits": 0.000514016588362809,
+          "n_classes": 7,
+          "I_given_sender_bits": 0.1306313084472953,
+          "I_given_sender_shuffled_bits": 0.002701987354950086
+        },
+        "belief_bin": {
+          "I_bits": 0.08974476595950809,
+          "H_m_given_s_bits": 1.4879890952903811,
+          "I_shuffled_bits": 0.0004743597280492118,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.21096293352908213,
+          "I_given_sender_shuffled_bits": 0.0021778326935937287
+        },
+        "sender_id": {
+          "I_bits": 0.5162826816583737,
+          "H_m_given_s_bits": 1.0614511795915156,
+          "I_shuffled_bits": 0.0009370954192160497,
+          "n_classes": 9
+        }
+      },
+      "H_m_bits": 1.5777338612498892
+    },
+    {
+      "slot": 2,
+      "descriptors": {
+        "neigh_pattern": {
+          "I_bits": 0.15015145279288444,
+          "H_m_given_s_bits": 0.6083313929001346,
+          "I_shuffled_bits": 0.0017069432055124567,
+          "n_classes": 16,
+          "I_given_sender_bits": 0.2505422900615299,
+          "I_given_sender_shuffled_bits": 0.0035706852290762203
+        },
+        "n_dead_neigh": {
+          "I_bits": 0.09040675549807498,
+          "H_m_given_s_bits": 0.6680760901949441,
+          "I_shuffled_bits": 0.0002051906848929974,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.15246500975088162,
+          "I_given_sender_shuffled_bits": 0.0013417329249939547
+        },
+        "n_dead_global": {
+          "I_bits": 0.07087621791240706,
+          "H_m_given_s_bits": 0.687606627780612,
+          "I_shuffled_bits": 0.00073180219035196,
+          "n_classes": 7,
+          "I_given_sender_bits": 0.11580010877666991,
+          "I_given_sender_shuffled_bits": 0.002651366914204978
+        },
+        "belief_bin": {
+          "I_bits": 0.14388405597363696,
+          "H_m_given_s_bits": 0.6145987897193821,
+          "I_shuffled_bits": 0.00040168518255701,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.18675337908848127,
+          "I_given_sender_shuffled_bits": 0.0025663933819384255
+        },
+        "sender_id": {
+          "I_bits": 0.12374296546104047,
+          "H_m_given_s_bits": 0.6347398802319786,
+          "I_shuffled_bits": 0.0009389120741788437,
+          "n_classes": 9
+        }
+      },
+      "H_m_bits": 0.758482845693019
+    },
+    {
+      "slot": 3,
+      "descriptors": {
+        "neigh_pattern": {
+          "I_bits": 0.15929468812523007,
+          "H_m_given_s_bits": 0.5416420539619695,
+          "I_shuffled_bits": 0.0009106320301472959,
+          "n_classes": 16,
+          "I_given_sender_bits": 0.30005635293225863,
+          "I_given_sender_shuffled_bits": 0.0024047221583584077
+        },
+        "n_dead_neigh": {
+          "I_bits": 0.09638284737802472,
+          "H_m_given_s_bits": 0.6045538947091749,
+          "I_shuffled_bits": 0.00023937705842713708,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.1703924731251127,
+          "I_given_sender_shuffled_bits": 0.0016659792712833132
+        },
+        "n_dead_global": {
+          "I_bits": 0.1021810296569221,
+          "H_m_given_s_bits": 0.5987557124302775,
+          "I_shuffled_bits": 0.0004595049491296077,
+          "n_classes": 7,
+          "I_given_sender_bits": 0.12268095716769956,
+          "I_given_sender_shuffled_bits": 0.002749331252271614
+        },
+        "belief_bin": {
+          "I_bits": 0.17001799923054395,
+          "H_m_given_s_bits": 0.5309187428566556,
+          "I_shuffled_bits": 0.00030373360322577536,
+          "n_classes": 5,
+          "I_given_sender_bits": 0.18902267622739438,
+          "I_given_sender_shuffled_bits": 0.0023559195759891294
+        },
+        "sender_id": {
+          "I_bits": 0.0777890608456725,
+          "H_m_given_s_bits": 0.6231476812415271,
+          "I_shuffled_bits": 0.0005827571059699999,
+          "n_classes": 9
+        }
+      },
+      "H_m_bits": 0.7009367420871996
+    }
+  ]
+}

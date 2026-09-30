@@ -1,0 +1,126 @@
+{
+  "grid": "3x3",
+  "n_nodes": 9,
+  "condition": "learned (4 Q-slots)",
+  "ablation": false,
+  "n_q_slots": 4,
+  "train_episodes": 50000,
+  "train_seed": 42,
+  "train_time_s": 2106.6,
+  "accuracy_probability": 0.8174331784248352,
+  "mean_detection_time_steps": 5.762263831229348,
+  "n_detected": 11803,
+  "n_failures": 14036,
+  "detection_rate": 0.8409090909090909,
+  "false_positive_rate": 0.038439806550741196,
+  "false_negative_rate": 0.05831008031964302,
+  "by_distance": {
+    "detection": {
+      "1": {
+        "n_observer_failure_pairs": 4643,
+        "n_detected": 4556,
+        "detection_rate": 0.9812621150118458,
+        "mean_detection_time_steps": 1.8362598770851624,
+        "std_detection_time_steps": 0.4623829530132125,
+        "median_detection_time_steps": 2.0,
+        "p90_detection_time_steps": 2.0
+      },
+      "2": {
+        "n_observer_failure_pairs": 5450,
+        "n_detected": 4787,
+        "detection_rate": 0.878348623853211,
+        "mean_detection_time_steps": 6.334029663672446,
+        "std_detection_time_steps": 5.018246825848389,
+        "median_detection_time_steps": 5.0,
+        "p90_detection_time_steps": 12.0
+      },
+      "3": {
+        "n_observer_failure_pairs": 3143,
+        "n_detected": 2257,
+        "detection_rate": 0.7181037225580655,
+        "mean_detection_time_steps": 11.354452813469207,
+        "std_detection_time_steps": 7.521907653447809,
+        "median_detection_time_steps": 10.0,
+        "p90_detection_time_steps": 22.0
+      },
+      "4": {
+        "n_observer_failure_pairs": 800,
+        "n_detected": 203,
+        "detection_rate": 0.25375,
+        "mean_detection_time_steps": 18.216748768472907,
+        "std_detection_time_steps": 10.236428604024116,
+        "median_detection_time_steps": 18.0,
+        "p90_detection_time_steps": 33.0
+      }
+    },
+    "beliefs": {
+      "1": {
+        "n_alive_target_pairs": 799888,
+        "n_dead_target_pairs": 132323,
+        "mean_belief_alive_target": 0.9261150513990322,
+        "mean_belief_dead_target": 0.05936373604847653,
+        "belief_gap": 0.8667513153505556,
+        "accuracy_alive_target": 0.9910374952493349,
+        "accuracy_dead_target": 0.9357708032617157,
+        "accuracy": 0.9831926463000329
+      },
+      "2": {
+        "n_alive_target_pairs": 930792,
+        "n_dead_target_pairs": 155875,
+        "mean_belief_alive_target": 0.7044546501650324,
+        "mean_belief_dead_target": 0.2625763273628527,
+        "belief_gap": 0.4418783228021797,
+        "accuracy_alive_target": 0.9353110039622171,
+        "accuracy_dead_target": 0.6379855653568565,
+        "accuracy": 0.89266168936758
+      },
+      "3": {
+        "n_alive_target_pairs": 529580,
+        "n_dead_target_pairs": 90270,
+        "mean_belief_alive_target": 0.5345589491207346,
+        "mean_belief_dead_target": 0.39244854464931794,
+        "belief_gap": 0.1421104044714167,
+        "accuracy_alive_target": 0.9139771139393482,
+        "accuracy_dead_target": 0.3161847789963443,
+        "accuracy": 0.826919415987739
+      },
+      "4": {
+        "n_alive_target_pairs": 131182,
+        "n_dead_target_pairs": 23274,
+        "mean_belief_alive_target": 0.5122688583962882,
+        "mean_belief_dead_target": 0.46766058615254935,
+        "belief_gap": 0.04460827224373887,
+        "accuracy_alive_target": 0.9535149639432239,
+        "accuracy_dead_target": 0.05559852195583054,
+        "accuracy": 0.8182136012845083
+      }
+    }
+  },
+  "final_q_spread": 0.7405703612367313,
+  "final_symbol_entropy_bits": 1.43424415055705,
+  "max_symbol_entropy_bits": 3.321928094887362,
+  "gamma": 0.75,
+  "neighborhood_reward_weight": 0.0,
+  "msg_lr_scale": 0.0,
+  "p_loss_max": 0.05,
+  "failure_rate": 0.01,
+  "n_belief_slots": 0,
+  "belief_ablation": true,
+  "age_ablation": true,
+  "n_age_slots": 0,
+  "detach_message_path": true,
+  "warmup_steps": 500,
+  "graph_diameter": 4,
+  "n_candidates": 10,
+  "train_episode_length": 30,
+  "test_episode_length": 45,
+  "test_episode_scale": 1.5,
+  "test_episodes": 1000,
+  "test_time_s": 52.8,
+  "train_time_per_episode_s": 0.04213,
+  "test_time_per_episode_s": 0.05283,
+  "device": "cuda",
+  "gpu_name": "NVIDIA L40S",
+  "gpu_count": 1,
+  "torch_version": "2.12.1+cu130"
+}

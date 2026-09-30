@@ -1,0 +1,36 @@
+{
+  "checkpoint": "paper_results/3x3_learned_dr/model_seed_42.pt",
+  "episodes": 1000,
+  "rows": [
+    {
+      "mode": "learned",
+      "accuracy_probability": 0.851676881313324,
+      "detection_rate": 0.8355905770335714,
+      "mean_detection_time_steps": 3.6858546168958743,
+      "n_detected": 10180,
+      "n_failures": 12183,
+      "false_positive_rate": 0.023597586899995804,
+      "false_negative_rate": 0.10235729068517685
+    },
+    {
+      "mode": "random",
+      "accuracy_probability": 0.5462199449539185,
+      "detection_rate": 0.9555117787080358,
+      "mean_detection_time_steps": 1.542221458637574,
+      "n_detected": 11641,
+      "n_failures": 12183,
+      "false_positive_rate": 0.335056334733963,
+      "false_negative_rate": 0.029452906921505928
+    },
+    {
+      "mode": "constant",
+      "accuracy_probability": 0.5168012976646423,
+      "detection_rate": 0.8707214971681851,
+      "mean_detection_time_steps": 1.1702488687782806,
+      "n_detected": 10608,
+      "n_failures": 12183,
+      "false_positive_rate": 0.35189568996429443,
+      "false_negative_rate": 0.01877675950527191
+    }
+  ]
+}

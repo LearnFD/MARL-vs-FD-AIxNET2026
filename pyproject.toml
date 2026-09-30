@@ -1,0 +1,15 @@
+[project]
+name = "marl-failure-detection-project"
+version = "0.1.0"
+description = "MARL Failure Detection"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch<2.3.0; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "torch; sys_platform != 'darwin' or platform_machine != 'x86_64'",
+    "numpy==1.26.4",
+    "matplotlib",
+]
+
+[tool.uv]
+managed = true

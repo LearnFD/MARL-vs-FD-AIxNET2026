@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "LearnFD: learned cooperative failure detection"
+type: software
+license: MIT
+repository-code: "https://github.com/LearnFD/MARL-vs-FD-AIxNET2026"
+authors:
+  - family-names: Marrie
+    given-names: Alexandre
+  - family-names: Montaigut
+    given-names: Antoine
+  - family-names: Zhang
+    given-names: Shukai
+  - family-names: Laurière
+    given-names: Mathieu
+  - family-names: Marin
+    given-names: Olivier
+preferred-citation:
+  type: conference-paper
+  title: "Learning to Suspect: Emergent Communication for Decentralized Failure Detection under Partial Observability"
+  authors:
+    - family-names: Marrie
+      given-names: Alexandre
+    - family-names: Montaigut
+      given-names: Antoine
+    - family-names: Zhang
+      given-names: Shukai
+    - family-names: Laurière
+      given-names: Mathieu
+    - family-names: Marin
+      given-names: Olivier
+  collection-title: "AIxNET 2026"
+  year: 2026
