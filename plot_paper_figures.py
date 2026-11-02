@@ -12,6 +12,7 @@ three belief heatmaps are replayed from the saved weights. Conventions:
 
 Usage (defaults point at the tracked runs in paper_results/):
     python plot_paper_figures.py --out figures
+    python plot_paper_figures.py --run paper_results/3x3_learned --out figures/own_reward
 """
 import argparse
 import json
@@ -55,7 +56,7 @@ plt.rcParams.update({
 
 
 PREVIEW = False
-# Appended to every file name, e.g. "_v2" for the second version of the paper.
+# Appended to every file name, e.g. to keep two runs side by side in one folder.
 SUFFIX = ""
 
 
@@ -245,8 +246,9 @@ def load_json(folder, name):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", default="paper_results/3x3_learned",
-                    help="the learned-channel run folder")
+    ap.add_argument("--run", default="paper_results/3x3_learned_dr",
+                    help="the learned-channel run folder (default: the paper's "
+                         "difference-reward run)")
     ap.add_argument("--baseline", default="paper_results/3x3_relay",
                     help="the relay run folder, overlaid on the by-distance panels")
     ap.add_argument("--out", default="figures")
@@ -261,8 +263,7 @@ def main():
     ap.add_argument("--env-seed", type=int, default=42,
                     help="seed of the replay environment, as in run_experiment.py")
     ap.add_argument("--suffix", default="",
-                    help='appended to every file name; "_v2" gives the second '
-                         'version of the paper')
+                    help="appended to every file name")
     ap.add_argument("--preview", action="store_true",
                     help="also write .preview.png next to each PDF, for checking "
                          "layout without a PDF viewer. Not for the paper.")

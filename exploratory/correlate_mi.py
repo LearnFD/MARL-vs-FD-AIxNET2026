@@ -1,9 +1,10 @@
 """Does mutual information rank working channels? (It does not.)
 
-The paper reports that across the non-degenerate 3x3 conditions, per-slot
-mutual information correlates weakly with detection rate -- the point being
-that MI is evidence the messages carry state, not a proxy for detector
-quality. That number had no script behind it; this is it.
+Exploratory check, not reported in the final paper: across the
+non-degenerate 3x3 conditions, per-slot mutual information correlates weakly
+with detection rate -- MI is evidence the messages carry state, not a proxy
+for detector quality. The paper makes the same point with the frozen sender
+(less MI than the own-reward head, same detection).
 
 Pairs every run directory that has both a channel_mi.json (written by
 analyze_channel_mi.py) and a metrics.json (written by run_experiment.py),
@@ -19,12 +20,12 @@ Two exclusions, both properties of the comparison rather than of the scores:
     regimes measures training length, not the MI-detection relationship.
 
 Both thresholds are printed with the result, so the exclusions can be checked
-rather than trusted. On the shipped exploratory runs the defaults reproduce the
-paper: ten non-degenerate 3x3 conditions, Pearson +0.16, Spearman -0.04.
+rather than trusted. On the shipped runs the defaults give ten non-degenerate
+3x3 conditions, Pearson +0.16, Spearman -0.04.
 
-Usage:
-    python correlate_mi.py paper_results/mi_correlation
-    python correlate_mi.py paper_results/mi_correlation --train-episodes 50000
+Usage (from the repository root):
+    python exploratory/correlate_mi.py exploratory/mi_correlation
+    python exploratory/correlate_mi.py exploratory/mi_correlation --train-episodes 50000
 """
 import argparse
 import glob
